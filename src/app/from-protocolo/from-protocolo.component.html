@@ -1,0 +1,30 @@
+<h3>Formulario</h3>
+
+
+  <div>
+
+  
+  
+    <label for="protocolo">Rrotocolo:</label>
+    <input type="text" [(ngModel)]="protocolos.protocolo"  id="protocolo">
+  
+  
+    <label for="requicao">Requicao:</label>
+    <input type="text" [(ngModel)]="protocolos.requicao"  id="requicao">
+  
+  
+    <label for="quant">Quqntidade:</label>
+    <input type="number" [(ngModel)]="protocolos.quant"  id="quant">
+  
+  
+    <label for="descricao">descricao:</label>
+    <input type="text"  [(ngModel)]="protocolos.descricao" id="descricao">
+
+    <label for="dataValidade">data Validade:</label>
+    <input type="date"  [(ngModel)]="protocolos.dataValidade" id="dataValidade">
+  
+  
+    <button (click)="Cadastrar()">Cadastrar</button>
+  </div>
+
+{{protocolos | json}}

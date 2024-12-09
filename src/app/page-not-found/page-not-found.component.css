@@ -1,0 +1,20 @@
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda a altura da janela */
+  background-color: #f8f9fa; /* Um cinza claro para o fundo */
+  color: #dc3545; /* Vermelho para o texto */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.error-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid #dc3545;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

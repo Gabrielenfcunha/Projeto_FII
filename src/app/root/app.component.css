@@ -1,0 +1,61 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; /* Fundo claro */
+  color: #333; /* Texto escuro */
+}
+
+/* Estilo para o título */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #007bff; /* Azul claro */
+  text-transform: uppercase;
+}
+
+/* Estilo para a navegação */
+nav {
+  background-color: #007bff; /* Azul claro */
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Branco para links */
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3; /* Azul escuro ao passar o mouse */
+  color: #f4f4f9; /* Texto claro ao passar o mouse */
+}
+
+/* Estilo para o conteúdo dinâmico */
+router-outlet {
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 80%;
+  max-width: 1200px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}

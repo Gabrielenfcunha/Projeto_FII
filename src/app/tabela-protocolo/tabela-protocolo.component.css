@@ -1,0 +1,94 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; /* Fundo claro */
+  color: #333; /* Cor de texto padrão */
+}
+
+/* Título principal */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  color: #007bff; /* Azul */
+}
+
+/* Mensagem quando lista está vazia */
+h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #dc3545; /* Vermelho */
+  margin: 1rem 0;
+}
+
+/* Div de pesquisa */
+div {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+div label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+div input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 300px;
+  max-width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+div input:focus {
+  border-color: #007bff;
+}
+
+/* Estilo da tabela */
+table {
+  width: 90%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background-color: #f4f4f9;
+}
+
+table tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Ações */
+table td:last-child {
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+table td:last-child:hover {
+  color: #0056b3;
+}

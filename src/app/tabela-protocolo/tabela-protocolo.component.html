@@ -1,0 +1,27 @@
+<h2>Tabela de Protocolo</h2>
+
+<h3 *ngIf="listaProtocolo.length == 0"> Não cadastrado protocolo</h3>
+<div>
+<label for="Dprotocolo">Pesquisa:</label>
+<input  [(ngModel)]="protoPresquisado" id="Dprotocolo">
+</div>
+<table *ngIf=" listaProtocolo.length > 0">
+  <tr>
+    <th>Id</th>
+    <th>Protocolo</th>
+    <th>Requicição</th>
+    <th>Descrição</th>
+    <th>Data Validade</th>
+    <th>Ações</th>
+  </tr>
+  <tr *ngFor="let protocolo of listaProtocolo | filtroPesquisa: protoPresquisado">
+    <td>{{protocolo.id}}</td>
+    <td>{{protocolo.protocolo}}</td>
+    <td>{{protocolo.requicao}}</td>
+    <td>{{protocolo.quant}}</td>
+    <td>{{protocolo.descricao}}</td>
+    <td>{{protocolo.dataValidade  | date:'dd/MM/yyyy'}}</td>    
+    <td><a  routerLink="/edit/{{protocolo.id}}">Editar</a></td>
+    <td><a routerLink="/tabela"  >Deletar</a></td>
+  </tr>
+</table>
