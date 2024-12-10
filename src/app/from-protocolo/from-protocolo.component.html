@@ -5,7 +5,7 @@
 
   
   
-    <label for="protocolo">Rrotocolo:</label>
+    <label for="protocolo">Protocolo:</label>
     <input type="text" [(ngModel)]="protocolos.protocolo"  id="protocolo">
   
   
@@ -24,7 +24,7 @@
     <input type="date"  [(ngModel)]="protocolos.dataValidade" id="dataValidade">
   
   
-    <button (click)="Cadastrar()">Cadastrar</button>
+    <button (click)="Salvar()">{{botaoAcao}}</button>
   </div>
 
 {{protocolos | json}}

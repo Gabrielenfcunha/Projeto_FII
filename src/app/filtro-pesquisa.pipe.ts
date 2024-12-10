@@ -3,6 +3,7 @@ import { Protocolo } from './protocolo';
 
 @Pipe({
   name: 'filtroPesquisa',
+  pure:false,
   standalone: false
 })
 export class FiltroPesquisaPipe implements PipeTransform {

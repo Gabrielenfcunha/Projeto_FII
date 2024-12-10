@@ -18,8 +18,8 @@ export class TabelaProtocoloComponent {
   this.listaProtocolo = protocoloService.listar();
  }
 
- deletar(id: number){
-  this.protocoloService.deletar(id);
+ deletar(id?: number){
+  this.protocoloService.deletar(id)
  }
 
 

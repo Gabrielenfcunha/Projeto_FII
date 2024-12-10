@@ -12,13 +12,13 @@ h1 {
   text-align: center;
   font-size: 2.5rem;
   margin: 1rem 0;
-  color: #007bff; /* Azul claro */
+  color:  #4CAF50; /* Azul claro */
   text-transform: uppercase;
 }
 
 /* Estilo para a navegação */
 nav {
-  background-color: #007bff; /* Azul claro */
+  background-color:  #4CAF50; /* Azul claro */
   padding: 1rem 0;
 }
 
@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #0056b3; /* Azul escuro ao passar o mouse */
+  background-color:  #025305; /* Azul escuro ao passar o mouse */
   color: #f4f4f9; /* Texto claro ao passar o mouse */
 }
 

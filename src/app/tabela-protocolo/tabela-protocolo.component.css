@@ -1,94 +1,91 @@
 /* Estilo geral */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9; /* Fundo claro */
-  color: #333; /* Cor de texto padrão */
+  background-color: #f9f9f9;
+  margin: 20px;
+  color: #333;
 }
 
-/* Título principal */
 h2 {
   text-align: center;
-  font-size: 2rem;
-  margin: 1.5rem 0;
-  color: #007bff; /* Azul */
+  color: #4CAF50;
+  margin-bottom: 20px;
 }
 
-/* Mensagem quando lista está vazia */
 h3 {
   text-align: center;
-  font-size: 1.2rem;
-  color: #dc3545; /* Vermelho */
-  margin: 1rem 0;
-}
-
-/* Div de pesquisa */
-div {
-  margin: 1rem auto;
-  text-align: center;
-}
-
-div label {
+  color: #ff5252;
   font-weight: bold;
-  margin-right: 0.5rem;
+  margin: 20px 0;
 }
 
-div input {
-  padding: 0.5rem;
-  font-size: 1rem;
-  width: 300px;
-  max-width: 90%;
+/* Estilo da pesquisa */
+div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
-  transition: border-color 0.3s;
+  border-radius: 4px;
+  width: 200px;
 }
 
-div input:focus {
-  border-color: #007bff;
+input[type="text"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
 /* Estilo da tabela */
 table {
-  width: 90%;
-  margin: 1rem auto;
+  width: 100%;
   border-collapse: collapse;
-  background: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  overflow: hidden;
+  margin-top: 20px;
 }
 
-table th, table td {
-  padding: 1rem;
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
   text-align: center;
   border: 1px solid #ddd;
 }
 
-table th {
-  background-color: #007bff;
-  color: #fff;
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: #4CAF50;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
-table tr:nth-child(even) {
-  background-color: #f4f4f9;
+a:hover {
+  color: #ff5252;
 }
 
-table tr:hover {
-  background-color: #e9ecef;
-}
+/* Estilo responsivo */
+@media screen and (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
 
-/* Ações */
-table td:last-child {
-  color: #007bff;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-table td:last-child:hover {
-  color: #0056b3;
+  input[type="text"] {
+    width: 150px;
+  }
 }

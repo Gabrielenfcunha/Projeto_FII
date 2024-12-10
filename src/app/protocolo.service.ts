@@ -5,7 +5,7 @@ import { Protocolo } from './protocolo';
   providedIn: 'root'
 })
 export class ProtocoloService {
-  idGen = 6;
+  idGen = 1;
   listaProtocolo: Protocolo[] = [
     {id: 1, protocolo:"84/2024", requicao:"1235/2025",quant:0 , descricao:"", dataValidade: new Date("2024-12-05")},
     {id: 2, protocolo:"1o5/2024", requicao:"1235/2025",quant:0 , descricao:"", dataValidade: new Date("2024-12-05")},
