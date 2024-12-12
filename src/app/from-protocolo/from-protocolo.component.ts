@@ -26,9 +26,14 @@ export class FromProtocoloComponent {
    }
 
    Salvar() {
-    alert("cadastrado o protocolo com sucesso")
-    this.protocoloService.inserir(this.protocolos);
-    this.protocolos = new Protocolo();
-    
+    if(this.id){
+      this.protocoloService.editar(this.id, this.protocolos)
+      alert("Editado o protocolo com sucesso")
+    }
+    else{ 
+      alert("cadastrado o protocolo com sucesso")
+      this.protocoloService.inserir(this.protocolos);
+      this.protocolos = new Protocolo();
+    }
   }
 }

@@ -7,11 +7,11 @@ import { Protocolo } from './protocolo';
 export class ProtocoloService {
   idGen = 1;
   listaProtocolo: Protocolo[] = [
-    {id: 1, protocolo:"84/2024", requicao:"1235/2025",quant:0 , descricao:"", dataValidade: new Date("2024-12-05")},
-    {id: 2, protocolo:"1o5/2024", requicao:"1235/2025",quant:0 , descricao:"", dataValidade: new Date("2024-12-05")},
-    {id: 3, protocolo:"132/2024", requicao:"1235/2025",quant:0 , descricao:"", dataValidade: new Date("2024-12-05")},
-    {id: 4, protocolo:"1242/2024", requicao:"1235/2025",quant:0 , descricao:"", dataValidade: new Date("2024-12-05")},
-    {id: 5, protocolo:"12772/2024", requicao:"1235/2025",quant:0 , descricao:"", dataValidade: new Date("2024-12-05")}
+    // {id: 1, protocolo:"84/2024", requicao:"1235/2025",quant:2 , descricao:"celular LG,celular motorola", dataValidade: new Date("2024-12-05")},
+    // {id: 2, protocolo:"1o5/2024", requicao:"1235/2025",quant:1 , descricao:" notebook Dell", dataValidade: new Date("2024-12-05")},
+    // {id: 3, protocolo:"132/2024", requicao:"1235/2025",quant:2 , descricao:"celular nokia,celular samsung", dataValidade: new Date("2024-12-05")},
+    // {id: 4, protocolo:"1242/2024", requicao:"1235/2025",quant:1 , descricao:"macbook", dataValidade: new Date("2024-12-05")},
+    // {id: 5, protocolo:"12772/2024", requicao:"1235/2025",quant: , descricao:"", dataValidade: new Date("2024-12-05")}
    ];
   constructor() { }
 
